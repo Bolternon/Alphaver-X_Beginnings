@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Alphaver-X: Beginnings Online Free!">
+    <meta property="og:title" content="Alphaver-X: Beginnings">
+    <meta property="og:site_name" content="Alphaver-X: Beginnings">
+    <meta property="og:description" content="Play Alphaver-X: Beginnings Online Free!">
+    <link rel="stylesheet" href="./style.css">
+    <title>Alphaver-X: Beginnings</title>
+</head>
+<body onload="frameStart()" onkeydown="input(event)">
+    <div class="container">
+        <canvas id="canvas" width="256" height="192"></canvas>
+        <div class="f col">
+            <div class="f1 flex">
+                <div class="f1"></div>
+                <div class="f1 button" onclick="input(screen, 'w')"><p>^</p></div>
+                <div class="f1"></div>
+                <div class="f1"></div>
+                <div class="f1"></div>
+                <div class="f1"></div>
+            </div>
+            <div class="f1 flex">
+                <div class="f1 button" onclick="input(screen, 'a')"><p>&lt;</p></div>
+                <div class="f1 button" onclick="input(screen, 's')"><p>v</p></div>
+                <div class="f1 button" onclick="input(screen, 'd')"><p>&gt;</p></div>
+                <div class="f1"></div>
+                <div class="f1 button" onclick="input(screen, 'o')"><p>A</p></div>
+                <div class="f1 button" onclick="input(screen, 'p')"><p>B</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/cavnas.js"></script>
+<script src="./scripts/grahpics.js"></script>
+<script src="./scripts/map.js"></script>
+<script src="./scripts/sprites.js"></script>
+<script src="./scripts/dungeon.js"></script>
+<script src="./scripts/data.js"></script>
+<script src="./scripts/actions.js"></script>
+</html>
